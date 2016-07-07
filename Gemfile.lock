@@ -36,25 +36,17 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    acts-as-taggable-on (3.5.0)
-      activerecord (>= 3.2, < 5)
+    acts-as-taggable-on (4.0.0)
+      activerecord (>= 4.0)
     addressable (2.4.0)
-    airbrussh (1.0.2)
+    airbrussh (1.1.0)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (6.0.3)
     ast (2.3.0)
-    autoparse (0.3.3)
-      addressable (>= 2.3.1)
-      extlib (>= 0.9.15)
-      multi_json (>= 1.0.0)
-    autoprefixer-rails (6.3.7)
+    autoprefixer-rails (6.4.0)
       execjs
     bcrypt (3.1.11)
-<<<<<<< HEAD
-    blacklight (5.18.0)
-=======
-    blacklight (6.3.0)
->>>>>>> 4d0f6ee... Update Blacklight and Spotlight dependencies
+    blacklight (6.4.0)
       bootstrap-sass (~> 3.2)
       deprecation
       globalid
@@ -62,9 +54,9 @@ GEM
       nokogiri (~> 1.6)
       rails (>= 4.2, < 6)
       rsolr (~> 1.0, >= 1.0.6)
-      twitter-typeahead-rails (~> 0.11)
-    blacklight-gallery (0.5.0)
-      blacklight (> 6.0.0.pre, < 7)
+      twitter-typeahead-rails (= 0.11.1.pre.corejavascript)
+    blacklight-gallery (0.6.1)
+      blacklight (~> 6.3)
       bootstrap-sass (~> 3.0)
       openseadragon (>= 0.2.0)
       rails
@@ -80,8 +72,8 @@ GEM
       bootstrap-sass (~> 3.0)
       rails
       ruby-oembed
-    blacklight-spotlight (0.18.0)
-      acts-as-taggable-on (~> 3.5)
+    blacklight-spotlight (0.23.0)
+      acts-as-taggable-on (>= 4.0.0.pre)
       autoprefixer-rails
       blacklight (~> 6.3)
       blacklight-gallery (>= 0.3.0)
@@ -91,28 +83,27 @@ GEM
       cancancan
       carrierwave
       carrierwave-crop
-      devise (~> 3.0)
-      devise_invitable (~> 1.5)
+      clipboard-rails (~> 1.5)
+      devise (>= 3.0)
+      devise_invitable (~> 1.6)
       faraday
       faraday_middleware
-      friendly_id (~> 5.1.0)
+      friendly_id (>= 5.2.0.beta.1, < 6)
       github-markup
-      google-api-client (~> 0.8.0)
       legato
       lodash-rails
-      mail_form (~> 1.5, >= 1.5.1)
       mini_magick
       nokogiri
       oauth2
       openseadragon
       paper_trail (~> 5.0)
-      rails (~> 4.0, >= 4.2.0)
+      rails (>= 4.2.0, < 6)
       roar-rails
+      signet
       sir_trevor_rails (~> 0.5)
-      social-share-button (~> 0.3)
       tophat
       underscore-rails (~> 1.6)
-    bootstrap-sass (3.3.6)
+    bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     bootstrap_form (2.4.0)
@@ -123,19 +114,19 @@ GEM
       thor (~> 0.18)
     byebug (9.0.5)
     cancancan (1.15.0)
-    capistrano (3.5.0)
+    capistrano (3.6.0)
       airbrussh (>= 1.0.0)
       capistrano-harrow
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
-    capistrano-bundle_audit (0.1.0)
+    capistrano-bundle_audit (0.2.1)
       bundler-audit (~> 0.5)
       capistrano (~> 3.0)
     capistrano-bundler (1.1.4)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
-    capistrano-harrow (0.5.2)
+    capistrano-harrow (0.5.3)
     capistrano-one_time_key (0.0.1)
       capistrano (~> 3.0)
     capistrano-passenger (0.2.0)
@@ -164,6 +155,7 @@ GEM
       jquery-rails
       rails (>= 3.2)
     chronic (0.10.2)
+    clipboard-rails (1.5.10)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -171,34 +163,22 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
-<<<<<<< HEAD
-    concurrent-ruby (1.0.1)
-    config (1.1.0)
-      activesupport (>= 3.0)
-      deep_merge (~> 1.0.1)
-    confstruct (1.0.2)
-      hashie (~> 3.3)
-    coveralls (0.8.13)
-      json (~> 1.8)
-      simplecov (~> 0.11.0)
-=======
     concurrent-ruby (1.0.2)
     config (1.2.1)
       activesupport (>= 3.0)
       deep_merge (~> 1.0, >= 1.0.1)
     confstruct (1.0.2)
       hashie (~> 3.3)
-    coveralls (0.8.14)
+    coveralls (0.8.15)
       json (>= 1.8, < 3)
       simplecov (~> 0.12.0)
->>>>>>> 4d0f6ee... Update Blacklight and Spotlight dependencies
       term-ansicolor (~> 1.3)
       thor (~> 0.19.1)
-      tins (~> 1.6.0)
-    daemons (1.2.3)
+      tins (>= 1.6.0, < 2)
+    daemons (1.2.4)
     database_cleaner (1.5.3)
     debug_inspector (0.0.2)
-    deep_merge (1.0.1)
+    deep_merge (1.1.1)
     delayed_job (4.1.2)
       activesupport (>= 3.0, < 5.1)
     delayed_job_active_record (4.1.1)
@@ -206,12 +186,11 @@ GEM
       delayed_job (>= 3.0, < 5)
     deprecation (1.0.0)
       activesupport
-    devise (3.5.10)
+    devise (4.2.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
+      railties (>= 4.1.0, < 5.1)
       responders
-      thread_safe (~> 0.1)
       warden (~> 1.2.3)
     devise-guests (0.5.0)
       devise
@@ -233,8 +212,7 @@ GEM
     dotenv (2.1.1)
     erubis (2.7.0)
     execjs (2.7.0)
-    exhibits_solr_conf (0.1.0)
-    extlib (0.9.16)
+    exhibits_solr_conf (0.1.1)
     factory_girl (4.7.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.7.0)
@@ -244,7 +222,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.10.0)
       faraday (>= 0.7.4, < 0.10)
-    friendly_id (5.1.0)
+    friendly_id (5.2.0.beta.1)
       activerecord (>= 4.0.0)
     gdor-indexer (0.5.0)
       activesupport
@@ -256,31 +234,12 @@ GEM
       stanford-mods (>= 1.4.0)
       trollop
     github-markup (1.4.0)
-    globalid (0.3.6)
+    globalid (0.3.7)
       activesupport (>= 4.1.0)
-    google-api-client (0.8.6)
-      activesupport (>= 3.2)
-      addressable (~> 2.3)
-      autoparse (~> 0.3)
-      extlib (~> 0.9)
-      faraday (~> 0.9)
-      googleauth (~> 0.3)
-      launchy (~> 2.4)
-      multi_json (~> 1.10)
-      retriable (~> 1.4)
-      signet (~> 0.6)
-    googleauth (0.5.1)
-      faraday (~> 0.9)
-      jwt (~> 1.4)
-      logging (~> 2.0)
-      memoist (~> 0.12)
-      multi_json (~> 1.11)
-      os (~> 0.9)
-      signet (~> 0.7)
     harvestdor (0.2.0)
       confstruct
       nokogiri
-    harvestdor-indexer (2.3.1)
+    harvestdor-indexer (2.4.0)
       activesupport
       confstruct
       dor-fetcher (= 1.0.5)
@@ -299,18 +258,9 @@ GEM
       json
     is_it_working-cbeer (1.0.16)
     iso-639 (0.2.8)
-    jbuilder (2.5.0)
+    jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
-<<<<<<< HEAD
-    jettywrapper (2.0.3)
-      activesupport (>= 3.0.0)
-      childprocess
-      i18n
-      logger
-      rubyzip
-=======
->>>>>>> 4d0f6ee... Update Blacklight and Spotlight dependencies
     jquery-rails (4.1.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -320,8 +270,6 @@ GEM
     kaminari (0.17.0)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    launchy (2.4.3)
-      addressable (~> 2.3)
     leaflet-markercluster-rails (0.7.0)
       railties (>= 3.1)
     leaflet-rails (0.7.7)
@@ -329,24 +277,12 @@ GEM
     legato (0.7.0)
       multi_json
     libv8 (3.16.14.15)
-    little-plugger (1.1.4)
-    lodash-rails (4.13.1)
+    lodash-rails (4.14.1)
       railties (>= 3.1)
-<<<<<<< HEAD
-    logger (1.2.8)
-=======
->>>>>>> 4d0f6ee... Update Blacklight and Spotlight dependencies
-    logging (2.1.0)
-      little-plugger (~> 1.1)
-      multi_json (~> 1.10)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
-    mail_form (1.5.1)
-      actionmailer (>= 3.2, < 5)
-      activemodel (>= 3.2, < 5)
-    memoist (0.14.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -377,10 +313,9 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    openseadragon (0.2.1)
+    openseadragon (0.3.0)
       rails (> 3.2.0)
     orm_adapter (0.5.0)
-    os (0.9.6)
     paper_trail (5.2.0)
       activerecord (>= 3.0, < 6.0)
       activesupport (>= 3.0, < 6.0)
@@ -432,7 +367,6 @@ GEM
     request_store (1.3.1)
     responders (2.2.0)
       railties (>= 4.2.0, < 5.1)
-    retriable (1.4.1)
     retries (0.0.5)
     roar (1.0.4)
       representable (>= 2.0.1, < 2.4.0)
@@ -445,35 +379,15 @@ GEM
       uber (>= 0.0.5)
     rsolr (1.1.1)
       builder (>= 2.1.2)
-<<<<<<< HEAD
-    rspec-core (3.4.4)
-      rspec-support (~> 3.4.0)
-    rspec-expectations (3.4.0)
-=======
-    rspec-core (3.5.0)
+    rspec-core (3.5.2)
       rspec-support (~> 3.5.0)
     rspec-expectations (3.5.0)
->>>>>>> 4d0f6ee... Update Blacklight and Spotlight dependencies
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.5.0)
     rspec-mocks (3.5.0)
       diff-lcs (>= 1.2.0, < 2.0)
-<<<<<<< HEAD
-      rspec-support (~> 3.4.0)
-    rspec-rails (3.4.2)
-      actionpack (>= 3.0, < 4.3)
-      activesupport (>= 3.0, < 4.3)
-      railties (>= 3.0, < 4.3)
-      rspec-core (~> 3.4.0)
-      rspec-expectations (~> 3.4.0)
-      rspec-mocks (~> 3.4.0)
-      rspec-support (~> 3.4.0)
-    rspec-support (3.4.1)
-    rubocop (0.38.0)
-      parser (>= 2.3.0.6, < 3.0)
-=======
       rspec-support (~> 3.5.0)
-    rspec-rails (3.5.0)
+    rspec-rails (3.5.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
@@ -482,26 +396,19 @@ GEM
       rspec-mocks (~> 3.5.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
-    rubocop (0.41.1)
+    rubocop (0.42.0)
       parser (>= 2.3.1.1, < 3.0)
->>>>>>> 4d0f6ee... Update Blacklight and Spotlight dependencies
       powerpack (~> 0.1)
       rainbow (>= 1.99.1, < 3.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.0, >= 1.0.1)
-<<<<<<< HEAD
-    rubocop-rspec (1.4.0)
-    ruby-oembed (0.10.0)
-    ruby-progressbar (1.7.5)
-=======
-    rubocop-rspec (1.5.0)
-      rubocop (>= 0.40.0)
+    rubocop-rspec (1.6.0)
+      rubocop (>= 0.42.0)
     ruby-oembed (0.10.1)
     ruby-progressbar (1.8.1)
->>>>>>> 4d0f6ee... Update Blacklight and Spotlight dependencies
     rubyzip (1.2.0)
     sass (3.4.22)
-    sass-rails (5.0.5)
+    sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
@@ -520,17 +427,17 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    sir_trevor_rails (0.5.0)
+    sir_trevor_rails (0.5.1)
       multi_json (~> 1.0)
-      rails (>= 3, < 5)
+      rails (>= 3, < 6)
       redcarpet (>= 2.0.1, < 4)
       twitter-text (~> 1.4)
     sitemap_generator (5.1.0)
       builder
-    social-share-button (0.3.1)
+    social-share-button (0.3.2)
       coffee-rails
       sass-rails
-    solr_wrapper (0.13.2)
+    solr_wrapper (0.15.0)
       faraday
       ruby-progressbar
       rubyzip
@@ -540,8 +447,8 @@ GEM
       nokogiri
       stomp
       xml-simple
-    spotlight-dor-resources (1.0.1)
-      blacklight-spotlight (~> 0.16)
+    spotlight-dor-resources (1.1.0)
+      blacklight-spotlight (~> 0.18)
       faraday
       gdor-indexer (>= 0.5.0)
       harvestdor-indexer (~> 2.3)
@@ -553,7 +460,7 @@ GEM
       blacklight-spotlight
       faraday
       iiif-presentation
-    sprockets (3.6.3)
+    sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.1.1)
@@ -565,7 +472,7 @@ GEM
       squash_ruby
     squash_ruby (2.0.1)
       json
-    sshkit (1.11.1)
+    sshkit (1.11.2)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     stanford-mods (2.2.0)
@@ -585,30 +492,27 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
-    tins (1.6.0)
-    tophat (2.2.1)
+    tins (1.12.0)
+    tophat (2.3.0)
       actionpack (>= 3.0.0)
     trollop (2.1.2)
-    turbolinks (5.0.0)
+    turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
     turnout (2.3.1)
       rack (~> 1.3)
       rack-accept (~> 0.4)
-<<<<<<< HEAD
-=======
       tilt (>= 1.4, < 3)
->>>>>>> 4d0f6ee... Update Blacklight and Spotlight dependencies
-    twitter-text (1.13.4)
+    twitter-text (1.14.0)
       unf (~> 0.1.0)
-    twitter-typeahead-rails (0.11.1)
+    twitter-typeahead-rails (0.11.1.pre.corejavascript)
       actionpack (>= 3.1)
       jquery-rails
       railties (>= 3.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.15)
-    uglifier (3.0.0)
+    uglifier (3.0.1)
       execjs (>= 0.3.0, < 3)
     underscore-rails (1.8.3)
     unf (0.1.4)
@@ -688,4 +592,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.12.3
+   1.12.5
