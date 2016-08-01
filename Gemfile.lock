@@ -212,7 +212,6 @@ GEM
     dotenv (2.1.1)
     erubis (2.7.0)
     execjs (2.7.0)
-    exhibits_solr_conf (0.1.1)
     factory_girl (4.7.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.7.0)
@@ -562,7 +561,6 @@ DEPENDENCIES
   devise_invitable
   dlss-capistrano
   dotenv
-  exhibits_solr_conf (~> 0.1)
   factory_girl_rails
   friendly_id
   is_it_working-cbeer
