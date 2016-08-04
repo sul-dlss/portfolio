@@ -507,6 +507,7 @@ DEPENDENCIES
   rack-dev-mark
   rails (= 4.2.7)
   riiif (~> 0.4.0)
+  rsolr
   rspec-rails
   rubocop
   rubocop-rspec
