@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Puma as the app server
@@ -36,7 +36,7 @@ group :deployment do
 end
 
 # Access an IRB console on exception pages or by using <%= console %> in views
-gem 'web-console', group: :development
+gem 'web-console', '< 3.3.1', group: :development
 
 group :development, :test do
   gem 'solr_wrapper'
@@ -75,7 +75,6 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'blacklight', '~> 6.3'
 gem 'blacklight-gallery', '~> 0.3'
 gem 'blacklight_heatmaps'
-gem 'blacklight-maps', '0.2.0'
 gem 'blacklight-spotlight', '~> 0.19'
 gem 'devise'
 gem 'devise-guests', '~> 0.3'
