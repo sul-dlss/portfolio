@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5.2'
+gem 'rails', '4.2.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Use Puma as the app server
+gem 'puma', '~> 3.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 2.7.2'
 # Use CoffeeScript for .coffee assets and views
@@ -34,11 +36,10 @@ group :deployment do
 end
 
 # Access an IRB console on exception pages or by using <%= console %> in views
-gem 'web-console', group: :development
+gem 'web-console', '< 3.3.1', group: :development
 
 group :development, :test do
-  gem 'jettywrapper'
-  gem 'exhibits_solr_conf'
+  gem 'solr_wrapper'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 
@@ -71,11 +72,11 @@ gem 'config'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 
-gem 'blacklight', '~> 5.16'
+gem 'blacklight', '~> 6.3'
 gem 'blacklight-gallery', '~> 0.3'
-gem 'blacklight-maps', '0.2.0'
-gem 'blacklight-spotlight', '~> 0.16'
-gem 'spotlight-dor-resources', '~> 1.0', '>= 1.0.1'
+gem 'blacklight_heatmaps'
+gem 'blacklight-spotlight', '~> 0.19'
+gem 'rsolr'
 gem 'devise'
 gem 'devise-guests', '~> 0.3'
 gem 'devise-remote-user'
@@ -95,3 +96,4 @@ gem 'sul_styles'
 gem 'dotenv'
 gem 'sir_trevor_rails'
 gem 'spotlight-resources-iiif'
+gem 'riiif', '~> 0.4.0'

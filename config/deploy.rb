@@ -1,5 +1,5 @@
-# config valid only for Capistrano 3.4
-lock '3.4.0'
+# config valid only for Capistrano 3.5
+lock '3.5.0'
 
 set :application, 'eportfolios'
 set :repo_url, 'https://github.com/sul-dlss/portfolios.git'
@@ -7,7 +7,7 @@ set :repo_url, 'https://github.com/sul-dlss/portfolios.git'
 # Default branch is :master
 set :branch, :master
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, "/opt/app/exhibits/eportfolio"
+set :deploy_to, "/opt/app/eportfolio/eportfolio"
 
 # Default value for :scm is :git
 # set :scm, :git

@@ -2,7 +2,6 @@ notifications:
   email: false
 
 rvm:
-  - 2.2.3
   - 2.3.1
 env:
   global:
@@ -10,3 +9,5 @@ env:
 
 sudo: false
 language: ruby
+
+jdk: oraclejdk8

@@ -3,13 +3,11 @@ inherit_from: .rubocop_todo.yml
 require: rubocop-rspec
 
 AllCops:
+  TargetRubyVersion: 2.2
+  DisplayCopNames: true
   Exclude:
-    - 'Gemfile'
-    - 'bin/**/*'
     - 'db/**/*'
     - 'config/**/*'
-    - 'spec/spec_helper.rb'
-    - 'spec/teaspoon_env.rb'
     - 'vendor/**/*'
 
 Rails:
@@ -22,14 +20,9 @@ Style/StringLiterals:
   Enabled: true
   EnforcedStyle: single_quotes
 
-RSpec/DescribeClass:
-  Exclude:
-    - 'spec/features/*'
-
 Metrics/ClassLength:
   Exclude:
     - 'app/controllers/catalog_controller.rb'
 
-# pending updated rubocop-rspec gem
-RSpec/FilePath:
+RSpec/NamedSubject:
   Enabled: false

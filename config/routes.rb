@@ -1,6 +1,7 @@
 Exhibits::Application.routes.draw do
   mount Spotlight::Resources::Iiif::Engine, at: 'spotlight_resources_iiif'
   mount Blacklight::Oembed::Engine, at: 'oembed'
+  mount Riiif::Engine => '/images', as: 'riiif'
 
   root to: 'spotlight/exhibits#index'
 
@@ -13,7 +14,8 @@ Exhibits::Application.routes.draw do
   resource :purl_resources
   resources :delayed_jobs
 
+  mount Blacklight::Engine => '/'
+  resources :solr_documents, only: [:show], path: '/catalog', controller: 'catalog'
+
   mount Spotlight::Engine, at: '/'
-  mount Spotlight::Dor::Resources::Engine, at: '/'
-  blacklight_for :catalog
 end
