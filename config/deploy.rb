@@ -19,7 +19,7 @@ set :log_level, :info
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, %w(config/secrets.yml config/database.yml config/blacklight.yml config/initializers/squash.rb config/newrelic.yml)
+set :linked_files, %w(config/secrets.yml config/database.yml config/blacklight.yml config/honeybadger.yml config/newrelic.yml)
 
 # Default value for linked_dirs is []
 set :linked_dirs, %w(log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads config/settings)
@@ -30,7 +30,6 @@ set :linked_dirs, %w(log tmp/pids tmp/cache tmp/sockets vendor/bundle public/sys
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-before 'deploy:publishing', 'squash:write_revision'
 before 'deploy:publishing', 'deploy:sitemap:create'
 
 namespace :deploy do
