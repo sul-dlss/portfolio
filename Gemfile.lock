@@ -389,7 +389,7 @@ GEM
       twitter-text (~> 1.4)
     sitemap_generator (5.1.0)
       builder
-    solr_wrapper (0.15.0)
+    solr_wrapper (0.18.1)
       faraday
       ruby-progressbar
       rubyzip
@@ -523,4 +523,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.12.5
+   1.13.5
