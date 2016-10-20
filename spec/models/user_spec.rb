@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe User do
   subject { FactoryGirl.create(:user) }
   describe '#webauth_groups' do

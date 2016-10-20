@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe LoginController do
   let(:user) { create(:curator) }
   before do
