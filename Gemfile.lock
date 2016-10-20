@@ -470,7 +470,6 @@ DEPENDENCIES
   blacklight_heatmaps
   bootstrap-sass (~> 3.3.5)
   byebug
-  capistrano (~> 3.0)
   capistrano-bundler
   capistrano-passenger
   capistrano-rails
