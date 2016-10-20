@@ -63,6 +63,7 @@ group :production do
   gem 'mysql2', '~> 0.3.20'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', platforms: :ruby
+  gem 'newrelic_rpm'
 end
 
 gem 'squash_ruby', require: 'squash/ruby'
