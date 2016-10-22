@@ -1,6 +1,3 @@
-# config valid only for Capistrano 3.5
-lock '3.5.0'
-
 set :application, 'eportfolios'
 set :repo_url, 'https://github.com/sul-dlss/portfolios.git'
 
