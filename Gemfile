@@ -48,8 +48,7 @@ group :production do
   gem 'newrelic_rpm'
 end
 
-gem 'squash_ruby', require: 'squash/ruby'
-gem 'squash_rails', require: 'squash/rails'
+gem 'honeybadger', '~> 2.0'
 
 gem 'config'
 
