@@ -9,9 +9,6 @@ gem 'puma', '~> 3.0'
 gem 'uglifier', '>= 2.7.2'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -21,14 +18,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
 group :deployment do
-  gem 'capistrano', '~> 3.0'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
@@ -40,33 +30,25 @@ gem 'web-console', '< 3.3.1', group: :development
 
 group :development, :test do
   gem 'solr_wrapper'
-  # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
-
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
   gem 'database_cleaner'
-
-  gem 'rubocop', require: false
-  gem 'rubocop-rspec', require: false
-end
-
-group :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'capybara'
-  gem 'coveralls', require: false
+  gem 'coveralls',     require: false
+  gem 'rubocop',       require: false
+  gem 'rubocop-rspec', require: false
 end
 
 group :production do
   gem 'mysql2', '~> 0.3.20'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', platforms: :ruby
+  gem 'newrelic_rpm'
 end
 
-gem 'squash_ruby', require: 'squash/ruby'
-gem 'squash_rails', require: 'squash/rails'
+gem 'honeybadger', '~> 2.0'
 
 gem 'config'
 
@@ -75,14 +57,15 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'blacklight', '~> 6.3'
 gem 'blacklight-gallery', '~> 0.3'
 gem 'blacklight_heatmaps'
-gem 'rsolr'
 gem 'blacklight-spotlight', '~> 0.25'
+gem 'rsolr'
 gem 'devise'
 gem 'devise-guests', '~> 0.3'
 gem 'devise-remote-user'
 gem 'devise_invitable'
 gem 'rack-dev-mark'
 gem 'turnout'
+gem 'slowpoke'
 gem 'whenever'
 gem 'ruby-oembed'
 gem 'is_it_working-cbeer'
