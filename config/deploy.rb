@@ -2,7 +2,7 @@ set :application, 'eportfolios'
 set :repo_url, 'https://github.com/sul-dlss/portfolios.git'
 
 # Default branch is :master
-set :branch, :master
+ask :branch, :master
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, "/opt/app/eportfolio/eportfolio"
 
