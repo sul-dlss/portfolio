@@ -363,7 +363,7 @@ GEM
       rubocop (>= 0.42.0)
     ruby-oembed (0.10.1)
     ruby-progressbar (1.8.1)
-    rubyzip (1.2.0)
+    rubyzip (1.2.1)
     safely_block (0.1.1)
       errbase
     sass (3.4.22)
