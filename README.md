@@ -49,3 +49,5 @@ $ REMOTE_USER="archivist1@example.com" rake server
 ```
 
 `REMOTE_USER` should match the name of the user you create when prompted. This will allow you to bypass the webauth authentication.
+
+Note that the `blacklight-spotlight` gem requires `mini_magick` which requires ImageMagick to be installed (e.g., `brew install imagemagick`)
