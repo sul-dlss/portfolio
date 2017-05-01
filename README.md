@@ -1,12 +1,12 @@
-[![Build Status](https://travis-ci.org/sul-dlss/exhibits.svg)](https://travis-ci.org/sul-dlss/exhibits) [![Coverage Status](https://coveralls.io/repos/sul-dlss/exhibits/badge.svg?branch=master&service=github)](https://coveralls.io/github/sul-dlss/exhibits?branch=master) [![Dependency Status](https://gemnasium.com/sul-dlss/exhibits.svg)](https://gemnasium.com/sul-dlss/exhibits)
+[![Build Status](https://travis-ci.org/sul-dlss/portfolios.svg)](https://travis-ci.org/sul-dlss/portfolios) [![Coverage Status](https://coveralls.io/repos/sul-dlss/portfolios/badge.svg?branch=master&service=github)](https://coveralls.io/github/sul-dlss/portfolios?branch=master) [![Dependency Status](https://gemnasium.com/sul-dlss/portfolios.svg)](https://gemnasium.com/sul-dlss/portfolios)
 
 # SUL Spotlight Exhibit template project
 
-The project's `master` branch provides a template Spotlight application with SUL branding and functionality.
+Similar to Exhibits, Portfolios is a SUL Spotlight application. In fact, this is just a copy of Exhibits code with different configuration and data.
 
 ## Configuration
 
-Exhibits need to provide the following configuration files:
+Portfoios need to provide the following configuration files:
 
 * `config/database.yml` - Standard Rails database configuration
 * `config/honeybadger.yml` - Honeybadger.io exception reporting configuration
@@ -21,12 +21,6 @@ Exhibits need to provide the following configuration files:
     ```
 
 * config/initializers/secret_token.rb - Rails secret token
-* public/.htaccess - An Apache .htaccess file with the necessary passenger configuration, e.g.:
-    ```
-    PassengerBaseURI /my-exhibit
-    PassengerAppRoot /home/lyberadmin/exhibits/my-exhibit/current
-    WebAuthLdapPrivgroup dlss:exhibits-admin
-    ```
 
 ## Reindexing content
 
@@ -47,6 +41,8 @@ $ REMOTE_USER="archivist1@example.com" rake server
 ```
 
 `REMOTE_USER` should match the name of the user you create when prompted. This will allow you to bypass the webauth authentication.
+
+Note that the `blacklight-spotlight` gem requires `mini_magick` which requires ImageMagick to be installed (e.g., `brew install imagemagick`)
 
 ## Deploying
 
