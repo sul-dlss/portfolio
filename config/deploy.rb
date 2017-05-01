@@ -1,11 +1,11 @@
-set :application, 'spotlight'
-set :repo_url, 'https://github.com/sul-dlss/exhibits.git'
+set :application, 'eportfolio'
+set :repo_url, 'https://github.com/sul-dlss/portfolios.git'
 
 # Default branch is :master
 ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 fetch(:branch)
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, "/opt/app/exhibits/exhibits"
+set :deploy_to, "/opt/app/eportfolio/eportfolio"
 
 # Default value for :scm is :git
 # set :scm, :git

@@ -1,6 +1,6 @@
-server 'exhibits-stage-a.stanford.edu', user: 'exhibits', roles: %w(web db app)
-server 'exhibits-stage-b.stanford.edu', user: 'exhibits', roles: %w(web app)
-server 'exhibits-worker-stage-a.stanford.edu', user: 'exhibits', roles: %w(app background)
+server 'eportfolio-stage-a.stanford.edu', user: 'eportfolio', roles: %w(web db app)
+server 'eportfolio-stage-b.stanford.edu', user: 'eportfolio', roles: %w(web app)
+server 'eportfolio-worker-stage-a.stanford.edu', user: 'eportfolio', roles: %w(app background)
 
 Capistrano::OneTimeKey.generate_one_time_key!
 set :rails_env, 'production'
