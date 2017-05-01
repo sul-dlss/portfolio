@@ -1,4 +1,4 @@
-Exhibits::Application.routes.draw do
+Portfolios::Application.routes.draw do
   # API compatible with is_it_working checks
   match "/is_it_working" => "ok_computer/ok_computer#index", via: [:get, :options]
   mount OkComputer::Engine, at: "/status"

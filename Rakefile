@@ -4,7 +4,7 @@ require File.expand_path('../config/application', __FILE__)
 
 task default: :ci
 
-Exhibits::Application.load_tasks
+Portfolios::Application.load_tasks
 
 begin
   require 'rubocop/rake_task'
