@@ -100,6 +100,7 @@ gem 'sul_styles'
 gem 'dotenv'
 gem 'sir_trevor_rails'
 gem 'riiif'
+gem 'iiif-presentation' # explcicitly add iiif-presetnation (may be able to remove this is newer versions of Spotlight)
 gem 'rsolr', '< 2'
 gem 'gdor-indexer', '~> 0.6'
 gem 'faraday'
