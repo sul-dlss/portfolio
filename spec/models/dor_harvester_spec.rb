@@ -3,7 +3,7 @@ require 'rails_helper'
 describe DorHarvester do
   subject(:harvester) { described_class.new druid_list: druid, exhibit: exhibit }
 
-  let(:exhibit) { FactoryGirl.create(:exhibit) }
+  let(:exhibit) { FactoryBot.create(:exhibit) }
   let(:druid) { 'xf680rd3068' }
   let(:blacklight_solr) { double }
 

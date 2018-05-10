@@ -62,7 +62,7 @@ end
 
 group :test do
   gem 'rspec-rails', '= 3.5.2' # pinning to 3.5.2 due to test failures in dor_harvester_spec
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'rails-controller-testing'
   gem 'capybara'
   gem 'coveralls', require: false
