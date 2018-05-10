@@ -61,7 +61,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '= 3.5.2' # pinning to 3.5.2 due to test failures in dor_harvester_spec
   gem 'factory_girl_rails'
   gem 'rails-controller-testing'
   gem 'capybara'
@@ -92,7 +92,7 @@ gem 'turnout'
 gem 'whenever'
 gem 'ruby-oembed'
 gem 'okcomputer'
-gem 'friendly_id', '~> 5.2.0'
+gem 'friendly_id', '= 5.2.0' # Pinning friendly_id to 5.2.0 otherwise most validations appear to fail
 gem 'sitemap_generator'
 gem 'sidekiq'
 gem 'sidekiq-statistic'
@@ -100,7 +100,7 @@ gem 'sul_styles'
 gem 'dotenv'
 gem 'sir_trevor_rails'
 gem 'riiif'
-gem 'rsolr'
+gem 'rsolr', '< 2'
 gem 'gdor-indexer', '~> 0.6'
 gem 'faraday'
 gem 'net-http-persistent', '< 3' # 3.x is incompatible with Faraday 0.9
