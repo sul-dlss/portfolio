@@ -5,7 +5,7 @@ describe UploadSolrDocumentBuilder do
   let(:exhibit) { FactoryBot.create(:exhibit) }
   let(:featured_image) { instance_double(Spotlight::FeaturedImage) }
   let(:upload_id) { 123 }
-  let(:riiif_image) { instance_double(Riiif::Image, info: { width: 5, height: 5 }) }
+  let(:riiif_image) { instance_double(Riiif::Image, info: instance_double('Info', width: 5, height: 5)) }
 
   let(:resource) { Spotlight::Resources::Upload.create! exhibit: exhibit, upload_id: upload_id }
 

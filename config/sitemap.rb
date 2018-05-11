@@ -1,6 +1,8 @@
 require 'sitemap_generator'
 
-SitemapGenerator::Sitemap.default_host = "#{Settings.host}#{Settings.base_path}"
+# TODO: Update the default host to match your deployment environment
+SitemapGenerator::Sitemap.default_host = 'http://localhost/'
+
 SitemapGenerator::Interpreter.send :include, Rails.application.routes.url_helpers
 SitemapGenerator::Interpreter.send :include, Spotlight::Engine.routes.url_helpers
 
