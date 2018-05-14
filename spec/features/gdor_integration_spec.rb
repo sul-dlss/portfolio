@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'gdor indexing integration test', type: :feature do
   subject(:dor_harvester) { DorHarvester.new(druid_list: druid, exhibit: exhibit) }
 
-  let(:exhibit) { FactoryGirl.create(:exhibit) }
+  let(:exhibit) { FactoryBot.create(:exhibit) }
   let(:druid) { 'xf680rd3068' }
 
   before do

@@ -8,3 +8,9 @@ stacks:
 
 purl:
   iiif_manifest_url: 'https://purl.stanford.edu/%{druid}/iiif/manifest.json'
+
+action_mailer:
+  default_options:
+    from: "example-team@example.com"
+  default_url_options:
+    host: "example.com"

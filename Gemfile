@@ -62,7 +62,7 @@ end
 
 group :test do
   gem 'rspec-rails', '= 3.5.2' # pinning to 3.5.2 due to test failures in dor_harvester_spec
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'rails-controller-testing'
   gem 'capybara'
   gem 'coveralls', require: false
@@ -80,7 +80,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'blacklight', '~> 6.3'
 gem 'blacklight-gallery', '~> 0.3'
 gem 'blacklight_heatmaps'
-gem 'blacklight-spotlight', '~> 0.34'
+gem 'blacklight-spotlight', '~> 1.5'
 gem 'blacklight_advanced_search'
 gem 'devise'
 gem 'devise-guests', '~> 0.3'

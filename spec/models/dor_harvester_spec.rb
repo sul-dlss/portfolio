@@ -3,7 +3,7 @@ require 'rails_helper'
 describe DorHarvester do
   subject(:harvester) { described_class.new druid_list: druid, exhibit: exhibit }
 
-  let(:exhibit) { FactoryGirl.create(:exhibit) }
+  let(:exhibit) { FactoryBot.create(:exhibit) }
   let(:druid) { 'xf680rd3068' }
   let(:blacklight_solr) { double }
 
@@ -150,7 +150,7 @@ describe DorHarvester do
 
     before do
       subject.save!
-      allow(Spotlight::Dor::Resources.indexer).to receive(:solr_document).and_return(upstream: true)
+      allow(Spotlight::Dor::Resources.indexer).to receive(:solr_document).and_return(upstream: true, id: '123')
       allow(resource).to receive(:collection?).and_return(false)
       allow_any_instance_of(SolrDocument).to receive(:to_solr).and_return({})
 
@@ -161,7 +161,8 @@ describe DorHarvester do
     let(:solr_data) do
       [{ spotlight_resource_id_ssim: subject.to_global_id,
          spotlight_resource_type_ssim: 'dor_harvesters',
-         upstream: true }]
+         upstream: true,
+         id: '123' }]
     end
 
     it 'adds a document to solr' do

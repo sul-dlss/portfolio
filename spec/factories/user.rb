@@ -1,5 +1,5 @@
 # This will guess the User class
-FactoryGirl.define do
+FactoryBot.define do
   factory :curator, class: User do
     email 'curator@example.com'
     password 'password'
