@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/sul-dlss/portfolios.svg)](https://travis-ci.org/sul-dlss/portfolios) [![Coverage Status](https://coveralls.io/repos/sul-dlss/portfolios/badge.svg?branch=master&service=github)](https://coveralls.io/github/sul-dlss/portfolios?branch=master) [![Dependency Status](https://gemnasium.com/sul-dlss/portfolios.svg)](https://gemnasium.com/sul-dlss/portfolios)
+[![Build Status](https://travis-ci.org/sul-dlss/portfolios.svg)](https://travis-ci.org/sul-dlss/portfolios) [![Coverage Status](https://coveralls.io/repos/sul-dlss/portfolios/badge.svg?branch=master&service=github)](https://coveralls.io/github/sul-dlss/portfolios?branch=master)
 
 # SUL Spotlight Exhibit template project
 
