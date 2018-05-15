@@ -11,3 +11,6 @@ en:
       invitation_instructions:
         someone_invited_you: "The SUL Exhibits Administrator has invited you to join the administrative group that manages the SUL online exhibits. You can accept this invitation by clicking the link below."
         ignore_html: "If you don't want to accept the invitation, please ignore this email. You won't be made a SUL online exhibits administrator until you access the link above."
+    search:
+      fields:
+        spotlight_upload_title_tesim: Title
